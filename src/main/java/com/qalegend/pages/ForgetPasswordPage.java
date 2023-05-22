@@ -42,7 +42,13 @@ public class ForgetPasswordPage extends TestHelper {
 	
 	public void emailAddressFormControl(String Email)
 	{
+		page.clear(emailAddressField);
 		page.enterText(emailAddressField, Email);
+	}
+	
+	public void passwordAddressFormControl(String password)
+	{
+		page.enterText(emailAddressField,password);
 	}
 	
 	 public void sendButton()

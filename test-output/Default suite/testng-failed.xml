@@ -8,7 +8,6 @@
           <include name="TC002_verifyLogin"/>
           <include name="setUp"/>
           <include name="TC004_rememberMeCheckBox"/>
-          <include name="close"/>
           <include name="TC003_verifyInvalidLogin"/>
           <include name="TC001_verifyLoginTitle"/>
         </methods>

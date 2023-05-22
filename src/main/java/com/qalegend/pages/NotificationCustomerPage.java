@@ -120,8 +120,16 @@ public class NotificationCustomerPage extends TestHelper {
 	{
 		page.checkBoxFunctionIsSelected(checkHelper2);
 	}
-	
-	
+	public boolean checkBoxSelected1() 
+	{
+		boolean status = page.checkBoxFunctionIsSelected(checkHelper1);
+		return status;
+	}
+	public boolean checkBoxSelected2() 
+	{
+		boolean status = page.checkBoxFunctionIsSelected(checkHelper2);
+		return status;
+	}
 	
 	public void PaymentReceived()
 	{

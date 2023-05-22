@@ -38,9 +38,16 @@ public class ProfilePage extends TestHelper {
 	private final String _update1="(//button[@type='submit'])[1]";
 	@FindBy(xpath=_update1)
 	private WebElement update1;
+	private final String _updateMessage="//div[contains(text(),'Password updated')]";
+	@FindBy(xpath=_updateMessage)
+	private WebElement updateMessage;
+	private final String _wrongPasswordMessage="//input[@data-msg='You have entered wrong password']";
+	@FindBy(xpath=_wrongPasswordMessage)
+	private WebElement wrongPasswordMessage;
 	
-	
-	
+	private final String _passwordMismatchMessage="//label[@class='error']";
+	@FindBy(xpath=_passwordMismatchMessage)
+	private WebElement passwordMismatchMessage;
 	
 	
 	private final String _prefix="//input[@id='surname']";
@@ -103,6 +110,10 @@ public class ProfilePage extends TestHelper {
 	{
 		page.enterText(confirmPassword, "123456");
 	}
+	public void WrongConfirmPasword()
+	{
+		page.enterText(confirmPassword, "12345");
+	}
 	public void update1()
 	{
 		page.clickOnElement(update1);
@@ -111,18 +122,34 @@ public class ProfilePage extends TestHelper {
 	
 	public void prefix()
 	{
+		page.clear(prefix);
 		page.enterText(prefix, "c");
+	}
+	public void wait1()
+	{
+		wait.setExplicitWait(driver, firstName);
 	}
 	public void firstName()
 	{
+		page.clear(firstName);
 		page.enterText(firstName, "ninu");
+	}
+	public void wait2()
+	{
+		wait.setExplicitWait(driver, lastName);
 	}
 	public void lastName()
 	{
+		page.clear(lastName);
 		page.enterText(lastName, "antony");
+	}
+	public void wait3()
+	{
+		wait.setExplicitWait(driver, eMail);
 	}
 	public void eMail()
 	{
+		page.clear(eMail);
 		page.enterText(eMail, "ninuantony777@gmail.com");
 	}
 	public void selectLanguageContainer()
@@ -132,7 +159,7 @@ public class ProfilePage extends TestHelper {
 	public void languageContainerEnglish()
 	{
 		page.dropDownSelectByIndex(english, 0);
-		page.clickOnElement(english);
+		
 	
 	}
 	public void languageContainerAlbanian()
@@ -158,6 +185,32 @@ public class ProfilePage extends TestHelper {
 		{
 			page.clickOnElement(update2);
 		}
+		public void waitElement()
+		{
+			wait.setExplicitWait(driver, languageContainer);
+		}
 		
+			public String updateMessage1()
+			{
+				String s=page.getElementText(updateMessage);
+				return s;
+				
+			}
+			public String wrongPasswordMessage()
+			{
+				String s=page.getElementText(wrongPasswordMessage);
+				return s;
+				
+				
+			}
+			public String passwordMismatchMessage()
+			{
+				String s=page.getElementText(passwordMismatchMessage);
+				return s;
+				
+				
+			}
+
+
 }
 	

@@ -46,7 +46,7 @@ public void TC002_verifyLogin(String usname,String pwd)
  @Test(priority=1,description="TC001_Verify login page title",groups= {"Smoke"},retryAnalyzer=Retry.class)
   public void TC001_verifyLoginTitle()
   {
-	 Assert.assertTrue(false);
+	
   login=new LoginPage(driver);
   String actualHomePageTitle=login.getLoginPageTitle();
   

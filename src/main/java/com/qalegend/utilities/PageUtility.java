@@ -138,15 +138,15 @@ public void mouseOverByOffset(WebDriver driver,int x,int y)
 	  act.moveByOffset(x,y);
 	  act.build().perform();
 }
-public void dropDownSelectByIndex(WebElement target,int index)
+public void dropDownSelectByIndex(WebElement element,int index)
 {
-	 Select select=new Select(target);
+	 Select select=new Select(element);
 	  select.selectByIndex(index);
 }
-public void dropDownSelectByValue(WebElement target,String attributeValue)
+public void dropDownSelectByValue(WebElement element,String Value)
 {
-	 Select select=new Select(target);
-	  select.selectByValue(attributeValue);
+	 Select select=new Select(element);
+	  select.selectByValue(Value);
 }
 public void dropDownSelectByVisibleText(WebElement target,String text)
 {
@@ -171,7 +171,11 @@ public void clear(WebElement element)
 	element.clear();
 }
 
-
+public boolean isDisplayed(WebDriver driver, WebElement ele) 
+{
+	Boolean status=ele.isDisplayed();
+	  return status;
+}
     }  
 
 

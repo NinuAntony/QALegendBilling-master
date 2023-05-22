@@ -77,13 +77,13 @@ public BaseSetUp()
 	}
 	}
 	
-	@AfterMethod(alwaysRun=true)
-	
-	public void close()
-
-	{
-		driver.close();
-	}
+	/*
+	 * @AfterMethod(alwaysRun=true)
+	 * 
+	 * public void close()
+	 * 
+	 * { driver.close(); }
+	 */
 		/*public void tearDown(ITestResult result) throws IOException
 	}
 	

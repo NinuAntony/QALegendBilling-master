@@ -16,12 +16,12 @@
 	   </groups>
     <classes>
   <!--<class name="com.qalegend.testscripts.LoginTest"> </class>-->
-       <class name="com.qalegend.testscripts.SignOutTest"></class>
-     <!--<class name="com.qalegend.testscripts.ProfilePageTest"> </class>
-     <class name="com.qalegend.testscripts.NotificationCustomerTest"> </class>-->
-		     <!-- <class name="com.qalegend.testscripts.ForgetPasswordTest"> </class>-->
-
-		 
+    <!--  <class name="com.qalegend.testscripts.SignOutTest"></class>-->
+    
+     <!--<class name="com.qalegend.testscripts.NotificationCustomerTest"> </class>-->
+		  <class name="com.qalegend.testscripts.ForgetPasswordTest"> </class>
+ <!--<class name="com.qalegend.testscripts.ProfilePageTest"> </class>
+		 -->
 	 
     </classes>
   </test> <!-- Test -->

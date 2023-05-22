@@ -61,7 +61,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Suite" class="navigator-link ">
-                    <span>1 group</span>
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">7 methods, 1 failed,  3 skipped,  3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,10 +104,58 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.qalegend.testscripts.SignOutTest" class="method navigator-link" hash-for-method="TC005_signOutClick">TC005_signOutClick</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.qalegend.testscripts.LoginTest" class="method navigator-link" hash-for-method="TC001_verifyLoginTitle">TC001_verifyLoginTitle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.qalegend.testscripts.LoginTest" class="method navigator-link" hash-for-method="TC001_verifyLoginTitle">TC001_verifyLoginTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.qalegend.testscripts.LoginTest" class="method navigator-link" hash-for-method="TC001_verifyLoginTitle">TC001_verifyLoginTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.qalegend.testscripts.LoginTest" class="method navigator-link" hash-for-method="TC001_verifyLoginTitle">TC001_verifyLoginTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.qalegend.testscripts.LoginTest" class="method navigator-link" hash-for-method="TC002_verifyLogin(admin, 123456)">TC002_verifyLogin(admin, 123456)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.qalegend.testscripts.LoginTest" class="method navigator-link" hash-for-method="TC003_verifyInvalidLogin">TC003_verifyInvalidLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.qalegend.testscripts.LoginTest" class="method navigator-link" hash-for-method="TC004_rememberMeCheckBox">TC004_rememberMeCheckBox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -122,55 +170,111 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.qalegend.testscripts.SignOutTest</span>
+              <span class="class-name">com.qalegend.testscripts.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TC005_signOutClick">
-                  </a> <!-- TC005_signOutClick -->
-                  <span class="method-name">TC005_signOutClick</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=113.0.5672.126)
-Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3df5d86f378c71e30aa1bfed64782382, findElement {using=xpath, value=//a[text()=&apos;Sign Out&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.126, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ASUS\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50283}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:50283/devtoo..., se:cdpVersion: 113.0.5672.126, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3df5d86f378c71e30aa1bfed64782382
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy14.toString(Unknown Source)
-	at java.base/java.lang.String.valueOf(String.java:4218)
-	at java.base/java.lang.StringBuilder.append(StringBuilder.java:173)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.toString(ExpectedConditions.java:298)
-	at java.base/java.lang.String.valueOf(String.java:4218)
-	at java.base/java.lang.StringBuilder.append(StringBuilder.java:173)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
-	at com.qalegend.utilities.WaitUtility.setExplicitWait(WaitUtility.java:41)
-	at com.qalegend.pages.SignOutPage.waitElement(SignOutPage.java:28)
-	at com.qalegend.testscripts.SignOutTest.TC005_signOutClick(SignOutTest.java:29)
+                  <a name="TC001_verifyLoginTitle">
+                  </a> <!-- TC001_verifyLoginTitle -->
+                  <span class="method-name">TC001_verifyLoginTitle</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.qalegend.testscripts.LoginTest.TC001_verifyLoginTitle(LoginTest.java:49)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 31 stack frames
 </div> <!-- stack-trace -->
                   <em>
-(TC004_Sign Out)                  </em>
+(TC001_Verify login page title)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.qalegend.testscripts.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC001_verifyLoginTitle">
+                  </a> <!-- TC001_verifyLoginTitle -->
+                  <span class="method-name">TC001_verifyLoginTitle</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.qalegend.testscripts.LoginTest.TC001_verifyLoginTitle(LoginTest.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(TC001_Verify login page title)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC001_verifyLoginTitle">
+                  </a> <!-- TC001_verifyLoginTitle -->
+                  <span class="method-name">TC001_verifyLoginTitle</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.qalegend.testscripts.LoginTest.TC001_verifyLoginTitle(LoginTest.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(TC001_Verify login page title)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC001_verifyLoginTitle">
+                  </a> <!-- TC001_verifyLoginTitle -->
+                  <span class="method-name">TC001_verifyLoginTitle</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.qalegend.testscripts.LoginTest.TC001_verifyLoginTitle(LoginTest.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(TC001_Verify login page title)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qalegend.testscripts.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC002_verifyLogin(admin, 123456)">
+                  </a> <!-- TC002_verifyLogin(admin, 123456) -->
+                  <span class="method-name">TC002_verifyLogin</span>
+                  <span class="parameters">(admin, 123456)</span>
+                  <em>
+(TC002_Verify valid login)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC003_verifyInvalidLogin">
+                  </a> <!-- TC003_verifyInvalidLogin -->
+                  <span class="method-name">TC003_verifyInvalidLogin</span>
+                  <em>
+(TC003_Verify invalid login)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC004_rememberMeCheckBox">
+                  </a> <!-- TC004_rememberMeCheckBox -->
+                  <span class="method-name">TC004_rememberMeCheckBox</span>
+                  <em>
+(TC004_Verify click on remember me checkbox)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -184,7 +288,7 @@ Session ID: 3df5d86f378c71e30aa1bfed64782382
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.qalegend.testscripts.SignOutTest&quot;/&gt;
+      &lt;class name=&quot;com.qalegend.testscripts.LoginTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -212,7 +316,23 @@ Session ID: 3df5d86f378c71e30aa1bfed64782382
               <span class="test-group-name">Regression</span>
               <br/>
               <div class="method-in-group">
-                <span class="method-in-group-name">TC005_signOutClick</span>
+                <span class="method-in-group-name">TC002_verifyLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC003_verifyInvalidLogin</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC004_rememberMeCheckBox</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">TC001_verifyLoginTitle</span>
                 <br/>
               </div> <!-- method-in-group -->
             </div> <!-- test-group -->
@@ -232,16 +352,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TC005_signOutClick')
-data.setCell(0, 2, 'com.qalegend.testscripts.SignOutTest')
-data.setCell(0, 3, 105190);
+data.setCell(0, 1, 'TC002_verifyLogin')
+data.setCell(0, 2, 'com.qalegend.testscripts.LoginTest')
+data.setCell(0, 3, 305282);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TC003_verifyInvalidLogin')
+data.setCell(1, 2, 'com.qalegend.testscripts.LoginTest')
+data.setCell(1, 3, 2281);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TC004_rememberMeCheckBox')
+data.setCell(2, 2, 'com.qalegend.testscripts.LoginTest')
+data.setCell(2, 3, 420);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TC001_verifyLoginTitle')
+data.setCell(3, 2, 'com.qalegend.testscripts.LoginTest')
+data.setCell(3, 3, 31);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'TC001_verifyLoginTitle')
+data.setCell(4, 2, 'com.qalegend.testscripts.LoginTest')
+data.setCell(4, 3, 14);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'TC001_verifyLoginTitle')
+data.setCell(5, 2, 'com.qalegend.testscripts.LoginTest')
+data.setCell(5, 3, 10);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'TC001_verifyLoginTitle')
+data.setCell(6, 2, 'com.qalegend.testscripts.LoginTest')
+data.setCell(6, 3, 6);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -267,23 +411,65 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.qalegend.testscripts.SignOutTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.qalegend.testscripts.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">TC005_signOutClick</span>
-                <span class="method-start">5403 ms</span>
+                <span class="method-name">TC001_verifyLoginTitle</span>
+                <span class="method-start">10676 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">10719 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC001_verifyLoginTitle</span>
+                <span class="method-start">22825 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">22842 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC001_verifyLoginTitle</span>
+                <span class="method-start">33934 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">33949 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">close</span>
-                <span class="method-start">110619 ms</span>
-              </div> <!-- configuration-method after -->
+                <span class="method-name">TC001_verifyLoginTitle</span>
+                <span class="method-start">57446 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">59873 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC002_verifyLogin(admin, 123456)</span>
+                <span class="method-start">70025 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">375573 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC003_verifyInvalidLogin</span>
+                <span class="method-start">385915 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(chrome)</span>
+                <span class="method-start">388205 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC004_rememberMeCheckBox</span>
+                <span class="method-start">399550 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

@@ -4,13 +4,12 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.qalegend.testscripts.SignOutTest">
+      <class name="com.qalegend.testscripts.LoginTest">
         <methods>
-          <include name="TC005_signOutClick"/>
           <include name="setUp"/>
-          <include name="close"/>
+          <include name="TC001_verifyLoginTitle"/>
         </methods>
-      </class> <!-- com.qalegend.testscripts.SignOutTest -->
+      </class> <!-- com.qalegend.testscripts.LoginTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
